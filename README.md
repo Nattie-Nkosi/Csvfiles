@@ -1,15 +1,18 @@
 # Analyzing CSV files
 
--- Read a csv file, parse the data, do some analysis and then return a report.
+- Read a csv file, parse the data, do some analysis and then return a report.
 
 ### first Attempt
 
--- Goal is to refactor the code below to a reusable or a good code for other engineers to understand.
+- Goal is to refactor the code below to a reusable or a good code for other engineers to understand.
 
 ```js
 import fs from "fs";
 
 // This is a BAD CODE!
+/*
+  TODO: Make this file to accept any csv file with any type of data.
+*/
 const matches = fs
   .readFileSync("football.csv", {
     encoding: "utf-8",
